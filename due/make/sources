@@ -1,0 +1,19 @@
+TARGET = firmware
+
+COMMON_INC_PATH += ../include
+COMMON_INC_PATH += ../sam
+COMMON_INC_PATH += ../sam/libsam
+COMMON_INC_PATH += ../sam/libsam/include
+COMMON_INC_PATH += ../sam/CMSIS/CMSIS/Include
+COMMON_INC_PATH += ../sam/CMSIS/Device/ATMEL
+COMMON_INC_PATH += ../sam/CMSIS/Device/ATMEL/sam3xa/include/
+COMMON_INC_PATH += ../sam/CMSIS/Device/ATMEL/sam3xa/include/component
+COMMON_INC_PATH += USB_Source
+
+SOURCES =	main.c \
+			printf_lite.c \
+			USB_Source/RingBuffer.c \
+			USB_Source/Reset.c \
+			USB_Source/CDC.c \
+			USB_Source/PluggableUSB.c \
+			USB_Source/USBCore.c
